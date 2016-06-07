@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+	<title>Smart Watch</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+</head>
+<body>
+  <div id="circle">
+    <div id="mainText" class="maintext">Date</div>
+    <div id="subText" class="subtext">Time</div>
+	<span class="glyphicon glyphicon-chevron-right btn-custom-right" aria-hidden="true" onclick="javascript:move(1);"></span>
+	<span class="glyphicon glyphicon-chevron-left btn-custom-left" aria-hidden="true" onclick="javascript:move(-1);"></span>
+	<span class="glyphicon glyphicon-home btn-custom-home" aria-hidden="true" onclick="javascript:home();"></span>
+	<img src="./images/time.png" class="bottom-img" id="img"/>
+	<input type="hidden" id="screen" value="0"/>
+  </div>
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
